@@ -1,0 +1,17 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+_G.GoRoom = true
+
+while _G.GoRoom do wait(1)
+    --[[ Tp Room ]]--
+    local TweenService = game:GetService("TweenService")
+        local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+        {CFrame = CFrame.new(134.80809, 65.6783218, 819.475647, 0.705438375, 4.73356714e-08, -0.708771229, -6.90250275e-08, 1, -1.91490934e-09, 0.708771229, 5.02738047e-08, 0.705438375)}):Play()
+    wait(2)
+    local TweenService = game:GetService("TweenService")
+        local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+        {CFrame = CFrame.new(144.80809, 65.6783218, 819.475647, 0.705438375, 4.73356714e-08, -0.708771229, -6.90250275e-08, 1, -1.91490934e-09, 0.708771229, 5.02738047e-08, 0.705438375)}):Play()
+    wait(2)
+end
